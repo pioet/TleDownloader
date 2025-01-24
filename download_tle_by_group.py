@@ -32,3 +32,4 @@ if __name__ == "__main__":
     group_list = ["starlink", "oneweb", "orbcomm", "globalstar", "iridium", "iridium-next"]
     for group in group_list:
         download_tle_by_group(group)
+        

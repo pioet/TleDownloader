@@ -31,5 +31,6 @@ download_tle_by_group("oneweb")
 可以使用如下代码
 
 ```python
-...
+from download_tle_by_kw import download_tle_by_kw
+download_tle_by_kw("lynk")
 ```

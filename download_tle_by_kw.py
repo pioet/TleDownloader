@@ -35,7 +35,7 @@ def download_tle_by_kw(keyword: str):
             data_str_list.append(response.text)
         except requests.RequestException as e:
             print(f"{keyword}/{sat_id} 请求出现错误: {e}")
-        time.sleep(1)
+        time.sleep(0.5)
     # 创建文件夹 data 存放数据
     os.makedirs("./data", exist_ok=True)
     with open(f'./data/{keyword}.txt', 'w', encoding='utf-8') as f:
